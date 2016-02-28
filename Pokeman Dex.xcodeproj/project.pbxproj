@@ -13,6 +13,7 @@
 		8D0B5C671C83564A008846F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0B5C661C83564A008846F2 /* Assets.xcassets */; };
 		8D0B5C6A1C83564A008846F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0B5C681C83564A008846F2 /* LaunchScreen.storyboard */; };
 		8D0B5C721C835FD6008846F2 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8D0B5C711C835FD6008846F2 /* pokemon.csv */; };
+		8D0B5C751C83615D008846F2 /* Pokeman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B5C741C83615D008846F2 /* Pokeman.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8D0B5C691C83564A008846F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D0B5C6B1C83564A008846F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D0B5C711C835FD6008846F2 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		8D0B5C741C83615D008846F2 /* Pokeman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokeman.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		8D0B5C5E1C835649008846F2 /* Pokeman Dex */ = {
 			isa = PBXGroup;
 			children = (
+				8D0B5C731C836143008846F2 /* Model */,
 				8D0B5C5F1C83564A008846F2 /* AppDelegate.swift */,
 				8D0B5C711C835FD6008846F2 /* pokemon.csv */,
 				8D0B5C611C83564A008846F2 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				8D0B5C6B1C83564A008846F2 /* Info.plist */,
 			);
 			path = "Pokeman Dex";
+			sourceTree = "<group>";
+		};
+		8D0B5C731C836143008846F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D0B5C741C83615D008846F2 /* Pokeman.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D0B5C751C83615D008846F2 /* Pokeman.swift in Sources */,
 				8D0B5C621C83564A008846F2 /* ViewController.swift in Sources */,
 				8D0B5C601C83564A008846F2 /* AppDelegate.swift in Sources */,
 			);
