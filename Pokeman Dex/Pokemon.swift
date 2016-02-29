@@ -1,6 +1,6 @@
 //
-//  Pokeman.swift
-//  Pokeman Dex
+//  Pokemon.swift
+//  Pokemon Dex
 //
 //  Created by Gregory DeNinno on 2/28/16.
 //  Copyright © 2016 gpdno. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Pokeman {
+class Pokemon {
     
     private var _name: String!
     private var _pokedexId: Int!
@@ -23,6 +23,6 @@ class Pokeman {
     
     init(name: String, id: Int) {
         self._name = name
-        self._pokedexId = pokedexId
+        self._pokedexId = id
     }
 }
