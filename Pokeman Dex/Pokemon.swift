@@ -141,7 +141,7 @@ class Pokemon {
                         self._defense = "\(defense)"
                     }
                     if let types = dict["types"] as? [Dictionary<String, String>] where types.count > 0 {
-                        //print(types)
+                    
                         if let name = types[0]["name"] {
                             self._type = name.capitalizedString
                         }
@@ -167,7 +167,6 @@ class Pokemon {
                                 if let desResult = response.result.value as? Dictionary<String, AnyObject>  {
                                     if let description = desResult["description"] as? String {
                                         self._description = description
-                                        print(self._description)
                                     }
                                 }
                                 completed()
@@ -191,9 +190,6 @@ class Pokemon {
                                     if let lvl = evolutions[0]["level"] as? Int {
                                         self._nextEvoLvl = "\(lvl)"
                                     }
-                                    print(self._nextEvoDesc)
-                                    print(self._nextEvoId)
-                                    print(self._nextEvoLvl)
                                 }
                             }
                         }

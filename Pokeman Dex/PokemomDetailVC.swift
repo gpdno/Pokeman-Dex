@@ -12,7 +12,7 @@ class PokemomDetailVC: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var mainImg: UIImageView!
-    @IBOutlet weak var mainLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var defenseLabel: UILabel!
     @IBOutlet weak var heightLabel: UILabel!
@@ -36,8 +36,25 @@ class PokemomDetailVC: UIViewController {
     }
     
     func updateUi() {
+        descriptionLabel.text = pokemon.description
+        typeLabel.text = pokemon.type
+        pokedexIdLabel.text = "\(pokemon.pokedexId)"
+        defenseLabel.text = pokemon.defense
+        heightLabel.text = pokemon.height
+        weightLabel.text = pokemon.weight
+        baseAttackLabel.text = pokemon.attack
         
-        
+        if pokemon.nextEvoId == "" {
+            evoLabel.text = "No evolutions"
+            currentEvoImg.hidden = true
+            nextEvoImg.hidden = true
+        } else {
+            currentEvoImg.hidden = false
+            nextEvoImg.hidden = false
+            currentEvoImg.image = UIImage(named: "\(pokemon.pokedexId)")
+            nextEvoImg.image = UIImage(named: "\(pokemon.nextEvoId)")
+            evoLabel.text = "Next evolution: \(pokemon.nextEvoDesc) - Lvl \(pokemon.nextEvoLvl)"
+        }
     }
     
     @IBAction func backButtonPressed(sender: AnyObject) {
